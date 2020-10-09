@@ -7,7 +7,7 @@ set -e
 
 echo "Starting build..."
 
-resources="$SRCROOT/aws-extend-switch-roles-extension/Resources"
+resources="$SRCROOT/aws-account-switcher-safari-extension/Resources"
 options="$resources/js/options.js"
 popup="$resources/js/popup.js"
 background="$resources/js/background.js"

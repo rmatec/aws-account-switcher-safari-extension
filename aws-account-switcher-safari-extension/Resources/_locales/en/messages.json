@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "AWS Account Switcher Safari Extension",
+        "description": "AWS Account Switcher Extension."
+    },
+    "extension_description": {
+        "message": "Allows quick switching among AWS accounts.",
+        "description": "Allows quick switching among AWS accounts."
+    }
+}

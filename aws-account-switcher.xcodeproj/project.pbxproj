@@ -11,7 +11,7 @@
 		7F22C186253094CC000AA3EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C184253094CC000AA3EC /* Main.storyboard */; };
 		7F22C188253094CC000AA3EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F22C187253094CC000AA3EC /* ViewController.swift */; };
 		7F22C18A253094CE000AA3EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C189253094CE000AA3EC /* Assets.xcassets */; };
-		7F22C1A7253094CE000AA3EC /* aws-extend-switch-roles Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7F22C1A6253094CE000AA3EC /* aws-extend-switch-roles Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7F22C1A7253094CE000AA3EC /* aws-account-switcher Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7F22C1A6253094CE000AA3EC /* aws-account-switcher Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7F22C1AC253094CE000AA3EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F22C1AB253094CE000AA3EC /* Cocoa.framework */; };
 		7F22C1AF253094CE000AA3EC /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F22C1AE253094CE000AA3EC /* SafariWebExtensionHandler.swift */; };
 		7F22C1B2253094CE000AA3EC /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1B1253094CE000AA3EC /* _locales */; };
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				7F22C1A7253094CE000AA3EC /* aws-extend-switch-roles Extension.appex in Embed App Extensions */,
+				7F22C1A7253094CE000AA3EC /* aws-account-switcher Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,14 +51,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7F22C17E253094CC000AA3EC /* aws-extend-switch-roles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aws-extend-switch-roles.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F22C17E253094CC000AA3EC /* aws-account-switcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aws-account-switcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F22C181253094CC000AA3EC /* AWS_Extend_Switch_Roles.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AWS_Extend_Switch_Roles.entitlements; sourceTree = "<group>"; };
 		7F22C182253094CC000AA3EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F22C185253094CC000AA3EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F22C187253094CC000AA3EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7F22C189253094CE000AA3EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F22C18B253094CE000AA3EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F22C1A6253094CE000AA3EC /* aws-extend-switch-roles Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "aws-extend-switch-roles Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F22C1A6253094CE000AA3EC /* aws-account-switcher Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "aws-account-switcher Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F22C1AB253094CE000AA3EC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7F22C1AE253094CE000AA3EC /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
 		7F22C1B1253094CE000AA3EC /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
@@ -100,8 +100,8 @@
 			children = (
 				7FB6E0EE2530F76700538AE5 /* LICENSE */,
 				7FB6E0EF2530F76700538AE5 /* README.md */,
-				7F22C180253094CC000AA3EC /* aws-extend-switch-roles */,
-				7F22C1AD253094CE000AA3EC /* aws-extend-switch-roles-extension */,
+				7F22C180253094CC000AA3EC /* aws-account-switcher */,
+				7F22C1AD253094CE000AA3EC /* aws-account-switcher-safari-extension */,
 				7F22C1AA253094CE000AA3EC /* Frameworks */,
 				7F22C17F253094CC000AA3EC /* Products */,
 			);
@@ -110,13 +110,13 @@
 		7F22C17F253094CC000AA3EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F22C17E253094CC000AA3EC /* aws-extend-switch-roles.app */,
-				7F22C1A6253094CE000AA3EC /* aws-extend-switch-roles Extension.appex */,
+				7F22C17E253094CC000AA3EC /* aws-account-switcher.app */,
+				7F22C1A6253094CE000AA3EC /* aws-account-switcher Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7F22C180253094CC000AA3EC /* aws-extend-switch-roles */ = {
+		7F22C180253094CC000AA3EC /* aws-account-switcher */ = {
 			isa = PBXGroup;
 			children = (
 				7F22C181253094CC000AA3EC /* AWS_Extend_Switch_Roles.entitlements */,
@@ -126,7 +126,7 @@
 				7F22C189253094CE000AA3EC /* Assets.xcassets */,
 				7F22C18B253094CE000AA3EC /* Info.plist */,
 			);
-			path = "aws-extend-switch-roles";
+			path = "aws-account-switcher";
 			sourceTree = "<group>";
 		};
 		7F22C1AA253094CE000AA3EC /* Frameworks */ = {
@@ -137,7 +137,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7F22C1AD253094CE000AA3EC /* aws-extend-switch-roles-extension */ = {
+		7F22C1AD253094CE000AA3EC /* aws-account-switcher-safari-extension */ = {
 			isa = PBXGroup;
 			children = (
 				7F22C1AE253094CE000AA3EC /* SafariWebExtensionHandler.swift */,
@@ -145,7 +145,7 @@
 				7F22C1C2253094CE000AA3EC /* AWS_Extend_Switch_Roles_Extension.entitlements */,
 				7F22C1B0253094CE000AA3EC /* Resources */,
 			);
-			path = "aws-extend-switch-roles-extension";
+			path = "aws-account-switcher-safari-extension";
 			sourceTree = "<group>";
 		};
 		7F22C1B0253094CE000AA3EC /* Resources */ = {
@@ -167,9 +167,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7F22C17D253094CC000AA3EC /* aws-extend-switch-roles */ = {
+		7F22C17D253094CC000AA3EC /* aws-account-switcher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F22C1C9253094CE000AA3EC /* Build configuration list for PBXNativeTarget "aws-extend-switch-roles" */;
+			buildConfigurationList = 7F22C1C9253094CE000AA3EC /* Build configuration list for PBXNativeTarget "aws-account-switcher" */;
 			buildPhases = (
 				7F22C17A253094CC000AA3EC /* Sources */,
 				7F22C17B253094CC000AA3EC /* Frameworks */,
@@ -181,14 +181,14 @@
 			dependencies = (
 				7F22C1A9253094CE000AA3EC /* PBXTargetDependency */,
 			);
-			name = "aws-extend-switch-roles";
+			name = "aws-account-switcher";
 			productName = "AWS Extend Switch Roles";
-			productReference = 7F22C17E253094CC000AA3EC /* aws-extend-switch-roles.app */;
+			productReference = 7F22C17E253094CC000AA3EC /* aws-account-switcher.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7F22C1A5253094CE000AA3EC /* aws-extend-switch-roles Extension */ = {
+		7F22C1A5253094CE000AA3EC /* aws-account-switcher Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F22C1C5253094CE000AA3EC /* Build configuration list for PBXNativeTarget "aws-extend-switch-roles Extension" */;
+			buildConfigurationList = 7F22C1C5253094CE000AA3EC /* Build configuration list for PBXNativeTarget "aws-account-switcher Extension" */;
 			buildPhases = (
 				7F22C1A2253094CE000AA3EC /* Sources */,
 				7F22C1A3253094CE000AA3EC /* Frameworks */,
@@ -199,9 +199,9 @@
 			);
 			dependencies = (
 			);
-			name = "aws-extend-switch-roles Extension";
+			name = "aws-account-switcher Extension";
 			productName = "AWS Extend Switch Roles Extension";
-			productReference = 7F22C1A6253094CE000AA3EC /* aws-extend-switch-roles Extension.appex */;
+			productReference = 7F22C1A6253094CE000AA3EC /* aws-account-switcher Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -221,7 +221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7F22C179253094CB000AA3EC /* Build configuration list for PBXProject "aws-extend-switch-roles" */;
+			buildConfigurationList = 7F22C179253094CB000AA3EC /* Build configuration list for PBXProject "aws-account-switcher" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -234,8 +234,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F22C17D253094CC000AA3EC /* aws-extend-switch-roles */,
-				7F22C1A5253094CE000AA3EC /* aws-extend-switch-roles Extension */,
+				7F22C17D253094CC000AA3EC /* aws-account-switcher */,
+				7F22C1A5253094CE000AA3EC /* aws-account-switcher Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -286,7 +286,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$SRCROOT/aws-extend-switch-roles-extension/Resources/bin/build.sh\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$SRCROOT/aws-account-switcher-safari-extension/Resources/bin/build.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -314,7 +314,7 @@
 /* Begin PBXTargetDependency section */
 		7F22C1A9253094CE000AA3EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7F22C1A5253094CE000AA3EC /* aws-extend-switch-roles Extension */;
+			target = 7F22C1A5253094CE000AA3EC /* aws-account-switcher Extension */;
 			targetProxy = 7F22C1A8253094CE000AA3EC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -449,18 +449,18 @@
 		7F22C1C6253094CE000AA3EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "aws-extend-switch-roles-extension/AWS_Extend_Switch_Roles_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "aws-account-switcher-safari-extension/AWS_Extend_Switch_Roles_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QQ5ULAUC22;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "aws-extend-switch-roles-extension/Info.plist";
+				INFOPLIST_FILE = "aws-account-switcher-safari-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-extend-switch-roles";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-account-switcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -470,18 +470,18 @@
 		7F22C1C7253094CE000AA3EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "aws-extend-switch-roles-extension/AWS_Extend_Switch_Roles_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "aws-account-switcher-safari-extension/AWS_Extend_Switch_Roles_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QQ5ULAUC22;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "aws-extend-switch-roles-extension/Info.plist";
+				INFOPLIST_FILE = "aws-account-switcher-safari-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-extend-switch-roles";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-account-switcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -494,19 +494,19 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "aws-extend-switch-roles/AWS_Extend_Switch_Roles.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "aws-account-switcher/AWS_Extend_Switch_Roles.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QQ5ULAUC22;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "aws-extend-switch-roles/Info.plist";
+				INFOPLIST_FILE = "aws-account-switcher/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-extend-switch-roles";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-account-switcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -519,19 +519,19 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "aws-extend-switch-roles/AWS_Extend_Switch_Roles.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "aws-account-switcher/AWS_Extend_Switch_Roles.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QQ5ULAUC22;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "aws-extend-switch-roles/Info.plist";
+				INFOPLIST_FILE = "aws-account-switcher/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-extend-switch-roles";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-account-switcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -541,7 +541,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7F22C179253094CB000AA3EC /* Build configuration list for PBXProject "aws-extend-switch-roles" */ = {
+		7F22C179253094CB000AA3EC /* Build configuration list for PBXProject "aws-account-switcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F22C1C3253094CE000AA3EC /* Debug */,
@@ -550,7 +550,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F22C1C5253094CE000AA3EC /* Build configuration list for PBXNativeTarget "aws-extend-switch-roles Extension" */ = {
+		7F22C1C5253094CE000AA3EC /* Build configuration list for PBXNativeTarget "aws-account-switcher Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F22C1C6253094CE000AA3EC /* Debug */,
@@ -559,7 +559,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F22C1C9253094CE000AA3EC /* Build configuration list for PBXNativeTarget "aws-extend-switch-roles" */ = {
+		7F22C1C9253094CE000AA3EC /* Build configuration list for PBXNativeTarget "aws-account-switcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F22C1CA253094CE000AA3EC /* Debug */,

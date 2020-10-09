@@ -10,7 +10,7 @@
         "128": "icons/Icon_128x128.png"
     },
     "browser_action": {
-        "default_title": "AWS Extend Switch Roles",
+        "default_title": "AWS Account Switcher",
         "default_icon": "icons/Icon_38x38.png",
         "default_popup": "popup.html"
     },
