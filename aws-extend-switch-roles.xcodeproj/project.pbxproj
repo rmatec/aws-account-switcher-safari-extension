@@ -22,6 +22,8 @@
 		7F22C1F22530AB75000AA3EC /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1F12530AB75000AA3EC /* options.html */; };
 		7F22C2002530AC0F000AA3EC /* updated.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1FF2530AC0F000AA3EC /* updated.html */; };
 		7FB6E0BD2530B7B200538AE5 /* bin in Resources */ = {isa = PBXBuildFile; fileRef = 7FB6E0BC2530B7B200538AE5 /* bin */; };
+		7FB6E0F02530F76700538AE5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7FB6E0EE2530F76700538AE5 /* LICENSE */; };
+		7FB6E0F12530F76700538AE5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7FB6E0EF2530F76700538AE5 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		7F22C1FF2530AC0F000AA3EC /* updated.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = updated.html; sourceTree = "<group>"; };
 		7FB6E0702530B26800538AE5 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 		7FB6E0BC2530B7B200538AE5 /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = "<group>"; };
+		7FB6E0EE2530F76700538AE5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7FB6E0EF2530F76700538AE5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		7F22C175253094CB000AA3EC = {
 			isa = PBXGroup;
 			children = (
+				7FB6E0EE2530F76700538AE5 /* LICENSE */,
+				7FB6E0EF2530F76700538AE5 /* README.md */,
 				7F22C180253094CC000AA3EC /* aws-extend-switch-roles */,
 				7F22C1AD253094CE000AA3EC /* aws-extend-switch-roles-extension */,
 				7F22C1AA253094CE000AA3EC /* Frameworks */,
@@ -239,7 +245,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FB6E0F02530F76700538AE5 /* LICENSE in Resources */,
 				7F22C18A253094CE000AA3EC /* Assets.xcassets in Resources */,
+				7FB6E0F12530F76700538AE5 /* README.md in Resources */,
 				7F22C186253094CC000AA3EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
