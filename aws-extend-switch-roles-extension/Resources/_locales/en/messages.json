@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "AWS Extend Switch Roles Extension",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "This is the AWS Extend Switch Roles Extension. Pon algo aquí me cago en dios.",
+        "description": "Allows quick switching among AWS accounts."
+    }
+}

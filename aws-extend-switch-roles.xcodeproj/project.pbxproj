@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F22C183253094CC000AA3EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F22C182253094CC000AA3EC /* AppDelegate.swift */; };
+		7F22C186253094CC000AA3EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C184253094CC000AA3EC /* Main.storyboard */; };
+		7F22C188253094CC000AA3EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F22C187253094CC000AA3EC /* ViewController.swift */; };
+		7F22C18A253094CE000AA3EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C189253094CE000AA3EC /* Assets.xcassets */; };
+		7F22C1A7253094CE000AA3EC /* aws-extend-switch-roles Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7F22C1A6253094CE000AA3EC /* aws-extend-switch-roles Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7F22C1AC253094CE000AA3EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F22C1AB253094CE000AA3EC /* Cocoa.framework */; };
+		7F22C1AF253094CE000AA3EC /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F22C1AE253094CE000AA3EC /* SafariWebExtensionHandler.swift */; };
+		7F22C1B2253094CE000AA3EC /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1B1253094CE000AA3EC /* _locales */; };
+		7F22C1B4253094CE000AA3EC /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1B3253094CE000AA3EC /* icons */; };
+		7F22C1B6253094CE000AA3EC /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1B5253094CE000AA3EC /* manifest.json */; };
+		7F22C1BC253094CE000AA3EC /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1BB253094CE000AA3EC /* popup.html */; };
+		7F22C1DA2530A6FF000AA3EC /* js in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1D92530A6FF000AA3EC /* js */; };
+		7F22C1F22530AB75000AA3EC /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1F12530AB75000AA3EC /* options.html */; };
+		7F22C2002530AC0F000AA3EC /* updated.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1FF2530AC0F000AA3EC /* updated.html */; };
+		7FB6E0BD2530B7B200538AE5 /* bin in Resources */ = {isa = PBXBuildFile; fileRef = 7FB6E0BC2530B7B200538AE5 /* bin */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F22C1A8253094CE000AA3EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F22C176253094CB000AA3EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F22C1A5253094CE000AA3EC;
+			remoteInfo = "AWS Extend Switch Roles Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7F22C1C8253094CE000AA3EC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7F22C1A7253094CE000AA3EC /* aws-extend-switch-roles Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7F22C17E253094CC000AA3EC /* aws-extend-switch-roles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aws-extend-switch-roles.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F22C181253094CC000AA3EC /* AWS_Extend_Switch_Roles.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AWS_Extend_Switch_Roles.entitlements; sourceTree = "<group>"; };
+		7F22C182253094CC000AA3EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F22C185253094CC000AA3EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F22C187253094CC000AA3EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F22C189253094CE000AA3EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F22C18B253094CE000AA3EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F22C1A6253094CE000AA3EC /* aws-extend-switch-roles Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "aws-extend-switch-roles Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F22C1AB253094CE000AA3EC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7F22C1AE253094CE000AA3EC /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		7F22C1B1253094CE000AA3EC /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		7F22C1B3253094CE000AA3EC /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
+		7F22C1B5253094CE000AA3EC /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		7F22C1BB253094CE000AA3EC /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		7F22C1C1253094CE000AA3EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F22C1C2253094CE000AA3EC /* AWS_Extend_Switch_Roles_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AWS_Extend_Switch_Roles_Extension.entitlements; sourceTree = "<group>"; };
+		7F22C1D92530A6FF000AA3EC /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
+		7F22C1F12530AB75000AA3EC /* options.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = options.html; sourceTree = "<group>"; };
+		7F22C1FF2530AC0F000AA3EC /* updated.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = updated.html; sourceTree = "<group>"; };
+		7FB6E0702530B26800538AE5 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		7FB6E0BC2530B7B200538AE5 /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F22C17B253094CC000AA3EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F22C1A3253094CE000AA3EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F22C1AC253094CE000AA3EC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F22C175253094CB000AA3EC = {
+			isa = PBXGroup;
+			children = (
+				7F22C180253094CC000AA3EC /* aws-extend-switch-roles */,
+				7F22C1AD253094CE000AA3EC /* aws-extend-switch-roles-extension */,
+				7F22C1AA253094CE000AA3EC /* Frameworks */,
+				7F22C17F253094CC000AA3EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F22C17F253094CC000AA3EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F22C17E253094CC000AA3EC /* aws-extend-switch-roles.app */,
+				7F22C1A6253094CE000AA3EC /* aws-extend-switch-roles Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F22C180253094CC000AA3EC /* aws-extend-switch-roles */ = {
+			isa = PBXGroup;
+			children = (
+				7F22C181253094CC000AA3EC /* AWS_Extend_Switch_Roles.entitlements */,
+				7F22C182253094CC000AA3EC /* AppDelegate.swift */,
+				7F22C184253094CC000AA3EC /* Main.storyboard */,
+				7F22C187253094CC000AA3EC /* ViewController.swift */,
+				7F22C189253094CE000AA3EC /* Assets.xcassets */,
+				7F22C18B253094CE000AA3EC /* Info.plist */,
+			);
+			path = "aws-extend-switch-roles";
+			sourceTree = "<group>";
+		};
+		7F22C1AA253094CE000AA3EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F22C1AB253094CE000AA3EC /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F22C1AD253094CE000AA3EC /* aws-extend-switch-roles-extension */ = {
+			isa = PBXGroup;
+			children = (
+				7F22C1AE253094CE000AA3EC /* SafariWebExtensionHandler.swift */,
+				7F22C1C1253094CE000AA3EC /* Info.plist */,
+				7F22C1C2253094CE000AA3EC /* AWS_Extend_Switch_Roles_Extension.entitlements */,
+				7F22C1B0253094CE000AA3EC /* Resources */,
+			);
+			path = "aws-extend-switch-roles-extension";
+			sourceTree = "<group>";
+		};
+		7F22C1B0253094CE000AA3EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7FB6E0BC2530B7B200538AE5 /* bin */,
+				7FB6E0702530B26800538AE5 /* src */,
+				7F22C1D92530A6FF000AA3EC /* js */,
+				7F22C1B1253094CE000AA3EC /* _locales */,
+				7F22C1B3253094CE000AA3EC /* icons */,
+				7F22C1B5253094CE000AA3EC /* manifest.json */,
+				7F22C1F12530AB75000AA3EC /* options.html */,
+				7F22C1BB253094CE000AA3EC /* popup.html */,
+				7F22C1FF2530AC0F000AA3EC /* updated.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F22C17D253094CC000AA3EC /* aws-extend-switch-roles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F22C1C9253094CE000AA3EC /* Build configuration list for PBXNativeTarget "aws-extend-switch-roles" */;
+			buildPhases = (
+				7F22C17A253094CC000AA3EC /* Sources */,
+				7F22C17B253094CC000AA3EC /* Frameworks */,
+				7F22C17C253094CC000AA3EC /* Resources */,
+				7F22C1C8253094CE000AA3EC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F22C1A9253094CE000AA3EC /* PBXTargetDependency */,
+			);
+			name = "aws-extend-switch-roles";
+			productName = "AWS Extend Switch Roles";
+			productReference = 7F22C17E253094CC000AA3EC /* aws-extend-switch-roles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F22C1A5253094CE000AA3EC /* aws-extend-switch-roles Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F22C1C5253094CE000AA3EC /* Build configuration list for PBXNativeTarget "aws-extend-switch-roles Extension" */;
+			buildPhases = (
+				7F22C1A2253094CE000AA3EC /* Sources */,
+				7F22C1A3253094CE000AA3EC /* Frameworks */,
+				7FB6E0BB2530B5BB00538AE5 /* ShellScript */,
+				7F22C1A4253094CE000AA3EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "aws-extend-switch-roles Extension";
+			productName = "AWS Extend Switch Roles Extension";
+			productReference = 7F22C1A6253094CE000AA3EC /* aws-extend-switch-roles Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F22C176253094CB000AA3EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					7F22C17D253094CC000AA3EC = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					7F22C1A5253094CE000AA3EC = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 7F22C179253094CB000AA3EC /* Build configuration list for PBXProject "aws-extend-switch-roles" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F22C175253094CB000AA3EC;
+			productRefGroup = 7F22C17F253094CC000AA3EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F22C17D253094CC000AA3EC /* aws-extend-switch-roles */,
+				7F22C1A5253094CE000AA3EC /* aws-extend-switch-roles Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F22C17C253094CC000AA3EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F22C18A253094CE000AA3EC /* Assets.xcassets in Resources */,
+				7F22C186253094CC000AA3EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F22C1A4253094CE000AA3EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F22C1DA2530A6FF000AA3EC /* js in Resources */,
+				7F22C1BC253094CE000AA3EC /* popup.html in Resources */,
+				7F22C1F22530AB75000AA3EC /* options.html in Resources */,
+				7F22C1B4253094CE000AA3EC /* icons in Resources */,
+				7FB6E0BD2530B7B200538AE5 /* bin in Resources */,
+				7F22C1B6253094CE000AA3EC /* manifest.json in Resources */,
+				7F22C2002530AC0F000AA3EC /* updated.html in Resources */,
+				7F22C1B2253094CE000AA3EC /* _locales in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FB6E0BB2530B5BB00538AE5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$SRCROOT/aws-extend-switch-roles-extension/Resources/bin/build.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F22C17A253094CC000AA3EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F22C188253094CC000AA3EC /* ViewController.swift in Sources */,
+				7F22C183253094CC000AA3EC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F22C1A2253094CE000AA3EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F22C1AF253094CE000AA3EC /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F22C1A9253094CE000AA3EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F22C1A5253094CE000AA3EC /* aws-extend-switch-roles Extension */;
+			targetProxy = 7F22C1A8253094CE000AA3EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F22C184253094CC000AA3EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F22C185253094CC000AA3EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F22C1C3253094CE000AA3EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F22C1C4253094CE000AA3EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7F22C1C6253094CE000AA3EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "aws-extend-switch-roles-extension/AWS_Extend_Switch_Roles_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QQ5ULAUC22;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "aws-extend-switch-roles-extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-extend-switch-roles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7F22C1C7253094CE000AA3EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "aws-extend-switch-roles-extension/AWS_Extend_Switch_Roles_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QQ5ULAUC22;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "aws-extend-switch-roles-extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-extend-switch-roles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7F22C1CA253094CE000AA3EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "aws-extend-switch-roles/AWS_Extend_Switch_Roles.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QQ5ULAUC22;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "aws-extend-switch-roles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-extend-switch-roles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7F22C1CB253094CE000AA3EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "aws-extend-switch-roles/AWS_Extend_Switch_Roles.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QQ5ULAUC22;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "aws-extend-switch-roles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-extend-switch-roles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F22C179253094CB000AA3EC /* Build configuration list for PBXProject "aws-extend-switch-roles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F22C1C3253094CE000AA3EC /* Debug */,
+				7F22C1C4253094CE000AA3EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F22C1C5253094CE000AA3EC /* Build configuration list for PBXNativeTarget "aws-extend-switch-roles Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F22C1C6253094CE000AA3EC /* Debug */,
+				7F22C1C7253094CE000AA3EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F22C1C9253094CE000AA3EC /* Build configuration list for PBXNativeTarget "aws-extend-switch-roles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F22C1CA253094CE000AA3EC /* Debug */,
+				7F22C1CB253094CE000AA3EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F22C176253094CB000AA3EC /* Project object */;
+}
