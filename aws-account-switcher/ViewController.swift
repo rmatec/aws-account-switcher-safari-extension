@@ -10,7 +10,7 @@ import SafariServices.SFSafariApplication
 import SafariServices.SFSafariExtensionManager
 
 let appName = "AWS Extend Switch Roles"
-let extensionBundleIdentifier = "com.raul.aws.AWS-Extend-Switch-Roles-Extension"
+let extensionBundleIdentifier = "com.raul.aws.aws-account-switcher"
 
 class ViewController: NSViewController {
 
@@ -21,7 +21,7 @@ class ViewController: NSViewController {
         self.appNameLabel.stringValue = appName
         SFSafariExtensionManager.getStateOfSafariExtension(withIdentifier: extensionBundleIdentifier) { (state, error) in
             guard let state = state, error == nil else {
-                // Insert code to inform the user that something went wrong.
+                self.appNameLabel.stringValue = "There was an initialization error. Please check whether the extension has been loaded in Safari."
                 return
             }
 
@@ -38,7 +38,7 @@ class ViewController: NSViewController {
     @IBAction func openSafariExtensionPreferences(_ sender: AnyObject?) {
         SFSafariApplication.showPreferencesForExtension(withIdentifier: extensionBundleIdentifier) { error in
             guard error == nil else {
-                // Insert code to inform the user that something went wrong.
+                self.appNameLabel.stringValue = "Could not automatically open Safari preferences. You can still enable the extension manually."
                 return
             }
 

@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>aws-account-switcher.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
 		<key>aws-extend-switch-roles Extension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>

@@ -18,9 +18,9 @@
 		7F22C1B4253094CE000AA3EC /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1B3253094CE000AA3EC /* icons */; };
 		7F22C1B6253094CE000AA3EC /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1B5253094CE000AA3EC /* manifest.json */; };
 		7F22C1BC253094CE000AA3EC /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1BB253094CE000AA3EC /* popup.html */; };
-		7F22C1DA2530A6FF000AA3EC /* js in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1D92530A6FF000AA3EC /* js */; };
 		7F22C1F22530AB75000AA3EC /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1F12530AB75000AA3EC /* options.html */; };
 		7F22C2002530AC0F000AA3EC /* updated.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1FF2530AC0F000AA3EC /* updated.html */; };
+		7F6A8F3A25374D1900EB82F2 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 7F6A8F3925374D1900EB82F2 /* CHANGELOG.md */; };
 		7FB6E0BD2530B7B200538AE5 /* bin in Resources */ = {isa = PBXBuildFile; fileRef = 7FB6E0BC2530B7B200538AE5 /* bin */; };
 		7FB6E0F02530F76700538AE5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7FB6E0EE2530F76700538AE5 /* LICENSE */; };
 		7FB6E0F12530F76700538AE5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7FB6E0EF2530F76700538AE5 /* README.md */; };
@@ -67,13 +67,14 @@
 		7F22C1BB253094CE000AA3EC /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
 		7F22C1C1253094CE000AA3EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F22C1C2253094CE000AA3EC /* AWS_Extend_Switch_Roles_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AWS_Extend_Switch_Roles_Extension.entitlements; sourceTree = "<group>"; };
-		7F22C1D92530A6FF000AA3EC /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
 		7F22C1F12530AB75000AA3EC /* options.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = options.html; sourceTree = "<group>"; };
 		7F22C1FF2530AC0F000AA3EC /* updated.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = updated.html; sourceTree = "<group>"; };
+		7F6A8F3925374D1900EB82F2 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		7FB6E0702530B26800538AE5 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 		7FB6E0BC2530B7B200538AE5 /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = "<group>"; };
 		7FB6E0EE2530F76700538AE5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7FB6E0EF2530F76700538AE5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7FE1921A25349FAF0060197E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +99,7 @@
 		7F22C175253094CB000AA3EC = {
 			isa = PBXGroup;
 			children = (
+				7F6A8F3925374D1900EB82F2 /* CHANGELOG.md */,
 				7FB6E0EE2530F76700538AE5 /* LICENSE */,
 				7FB6E0EF2530F76700538AE5 /* README.md */,
 				7F22C180253094CC000AA3EC /* aws-account-switcher */,
@@ -140,6 +142,7 @@
 		7F22C1AD253094CE000AA3EC /* aws-account-switcher-safari-extension */ = {
 			isa = PBXGroup;
 			children = (
+				7FE1921A25349FAF0060197E /* .gitignore */,
 				7F22C1AE253094CE000AA3EC /* SafariWebExtensionHandler.swift */,
 				7F22C1C1253094CE000AA3EC /* Info.plist */,
 				7F22C1C2253094CE000AA3EC /* AWS_Extend_Switch_Roles_Extension.entitlements */,
@@ -153,7 +156,6 @@
 			children = (
 				7FB6E0BC2530B7B200538AE5 /* bin */,
 				7FB6E0702530B26800538AE5 /* src */,
-				7F22C1D92530A6FF000AA3EC /* js */,
 				7F22C1B1253094CE000AA3EC /* _locales */,
 				7F22C1B3253094CE000AA3EC /* icons */,
 				7F22C1B5253094CE000AA3EC /* manifest.json */,
@@ -246,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FB6E0F02530F76700538AE5 /* LICENSE in Resources */,
+				7F6A8F3A25374D1900EB82F2 /* CHANGELOG.md in Resources */,
 				7F22C18A253094CE000AA3EC /* Assets.xcassets in Resources */,
 				7FB6E0F12530F76700538AE5 /* README.md in Resources */,
 				7F22C186253094CC000AA3EC /* Main.storyboard in Resources */,
@@ -256,7 +259,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F22C1DA2530A6FF000AA3EC /* js in Resources */,
 				7F22C1BC253094CE000AA3EC /* popup.html in Resources */,
 				7F22C1F22530AB75000AA3EC /* options.html in Resources */,
 				7F22C1B4253094CE000AA3EC /* icons in Resources */,
@@ -505,7 +507,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-account-switcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -530,7 +532,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-account-switcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
