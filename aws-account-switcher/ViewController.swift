@@ -10,7 +10,7 @@ import SafariServices.SFSafariApplication
 import SafariServices.SFSafariExtensionManager
 
 let appName = "AWS Extend Switch Roles"
-let extensionBundleIdentifier = "com.raul.aws.aws-account-switcher"
+let extensionBundleIdentifier = "com.raul.aws.aws-account-switcher.safari-extension"
 
 class ViewController: NSViewController {
 

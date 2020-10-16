@@ -122,6 +122,7 @@ function brushAccountId(val) {
 
 window.onload = function() {
   document.getElementById('openOptionsLink').onclick = function(e) {
+    console.log('Opening options');
     openOptions();
     return false;
   }

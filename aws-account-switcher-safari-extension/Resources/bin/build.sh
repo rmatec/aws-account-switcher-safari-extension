@@ -1,10 +1,7 @@
 #!/bin/bash
-#--
-# build.sh
-#--
-
 set -e
 
+echo "Preparing files for production"
 resources="$SRCROOT/aws-account-switcher-safari-extension/Resources"
 options="$resources/js/options.js"
 popup="$resources/js/popup.js"
@@ -29,3 +26,4 @@ cat "$resources/src/lib/data_profiles_splitter.js"  > "$background"
 cat "$resources/src/lib/load_aws_config.js"        >> "$background"
 cat "$resources/src/lib/lz-string.min.js"          >> "$background"
 cat "$resources/src/background.js"                 >> "$background"
+echo "Finished preparing files for production"

@@ -20,7 +20,10 @@
 		7F22C1BC253094CE000AA3EC /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1BB253094CE000AA3EC /* popup.html */; };
 		7F22C1F22530AB75000AA3EC /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1F12530AB75000AA3EC /* options.html */; };
 		7F22C2002530AC0F000AA3EC /* updated.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1FF2530AC0F000AA3EC /* updated.html */; };
+		7F2501BA2539CE0C002D551E /* credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F2501B92539CE0C002D551E /* credits.html */; };
 		7F6A8F3A25374D1900EB82F2 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 7F6A8F3925374D1900EB82F2 /* CHANGELOG.md */; };
+		7F6A8F3E25374E8000EB82F2 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 7F6A8F3D25374E8000EB82F2 /* js */; };
+		7F6A8F4125374E9700EB82F2 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 7F6A8F3D25374E8000EB82F2 /* js */; };
 		7FB6E0BD2530B7B200538AE5 /* bin in Resources */ = {isa = PBXBuildFile; fileRef = 7FB6E0BC2530B7B200538AE5 /* bin */; };
 		7FB6E0F02530F76700538AE5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7FB6E0EE2530F76700538AE5 /* LICENSE */; };
 		7FB6E0F12530F76700538AE5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7FB6E0EF2530F76700538AE5 /* README.md */; };
@@ -69,7 +72,9 @@
 		7F22C1C2253094CE000AA3EC /* AWS_Extend_Switch_Roles_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AWS_Extend_Switch_Roles_Extension.entitlements; sourceTree = "<group>"; };
 		7F22C1F12530AB75000AA3EC /* options.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = options.html; sourceTree = "<group>"; };
 		7F22C1FF2530AC0F000AA3EC /* updated.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = updated.html; sourceTree = "<group>"; };
+		7F2501B92539CE0C002D551E /* credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credits.html; sourceTree = "<group>"; };
 		7F6A8F3925374D1900EB82F2 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		7F6A8F3D25374E8000EB82F2 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
 		7FB6E0702530B26800538AE5 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 		7FB6E0BC2530B7B200538AE5 /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = "<group>"; };
 		7FB6E0EE2530F76700538AE5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -154,11 +159,13 @@
 		7F22C1B0253094CE000AA3EC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7F6A8F3D25374E8000EB82F2 /* js */,
 				7FB6E0BC2530B7B200538AE5 /* bin */,
 				7FB6E0702530B26800538AE5 /* src */,
 				7F22C1B1253094CE000AA3EC /* _locales */,
 				7F22C1B3253094CE000AA3EC /* icons */,
 				7F22C1B5253094CE000AA3EC /* manifest.json */,
+				7F2501B92539CE0C002D551E /* credits.html */,
 				7F22C1F12530AB75000AA3EC /* options.html */,
 				7F22C1BB253094CE000AA3EC /* popup.html */,
 				7F22C1FF2530AC0F000AA3EC /* updated.html */,
@@ -177,6 +184,7 @@
 				7F22C17B253094CC000AA3EC /* Frameworks */,
 				7F22C17C253094CC000AA3EC /* Resources */,
 				7F22C1C8253094CE000AA3EC /* Embed App Extensions */,
+				7F2501C42539D7D6002D551E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -196,6 +204,7 @@
 				7F22C1A3253094CE000AA3EC /* Frameworks */,
 				7FB6E0BB2530B5BB00538AE5 /* ShellScript */,
 				7F22C1A4253094CE000AA3EC /* Resources */,
+				7F2501BD2539D2D4002D551E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -248,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FB6E0F02530F76700538AE5 /* LICENSE in Resources */,
+				7F6A8F3E25374E8000EB82F2 /* js in Resources */,
 				7F6A8F3A25374D1900EB82F2 /* CHANGELOG.md in Resources */,
 				7F22C18A253094CE000AA3EC /* Assets.xcassets in Resources */,
 				7FB6E0F12530F76700538AE5 /* README.md in Resources */,
@@ -259,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F6A8F4125374E9700EB82F2 /* js in Resources */,
 				7F22C1BC253094CE000AA3EC /* popup.html in Resources */,
 				7F22C1F22530AB75000AA3EC /* options.html in Resources */,
 				7F22C1B4253094CE000AA3EC /* icons in Resources */,
@@ -266,12 +277,48 @@
 				7F22C1B6253094CE000AA3EC /* manifest.json in Resources */,
 				7F22C2002530AC0F000AA3EC /* updated.html in Resources */,
 				7F22C1B2253094CE000AA3EC /* _locales in Resources */,
+				7F2501BA2539CE0C002D551E /* credits.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7F2501BD2539D2D4002D551E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Update build number automatically\n\"$SRCROOT/aws-account-switcher-safari-extension/Resources/bin/updateBuildNumber.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F2501C42539D7D6002D551E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Update build number automatically\n\"$SRCROOT/aws-account-switcher-safari-extension/Resources/bin/updateBuildNumber.sh\"\n";
+		};
 		7FB6E0BB2530B5BB00538AE5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -288,7 +335,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$SRCROOT/aws-account-switcher-safari-extension/Resources/bin/build.sh\"\n";
+			shellScript = "# Script that collects all scripts and copies them to js folder\n\"$SRCROOT/aws-account-switcher-safari-extension/Resources/bin/build.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -453,6 +500,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "aws-account-switcher-safari-extension/AWS_Extend_Switch_Roles_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QQ5ULAUC22;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "aws-account-switcher-safari-extension/Info.plist";
@@ -462,7 +510,8 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-account-switcher";
+				MARKETING_VERSION = 2.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-account-switcher.safari-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -474,6 +523,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "aws-account-switcher-safari-extension/AWS_Extend_Switch_Roles_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QQ5ULAUC22;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "aws-account-switcher-safari-extension/Info.plist";
@@ -483,7 +533,8 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-account-switcher";
+				MARKETING_VERSION = 2.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-account-switcher.safari-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -500,6 +551,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QQ5ULAUC22;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "aws-account-switcher/Info.plist";
@@ -508,6 +560,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 2.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-account-switcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -525,6 +578,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QQ5ULAUC22;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "aws-account-switcher/Info.plist";
@@ -533,6 +587,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 2.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.raul.aws.aws-account-switcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
