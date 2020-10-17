@@ -127,11 +127,6 @@ window.onload = function() {
     return false;
   }
 
-  document.getElementById('openUpdateNoticeLink').onclick = function(e) {
-    browser.tabs.create({ url: chrome.extension.getURL('updated.html')}, function(tab){});
-    return false;
-  }
-
   document.getElementById('openCreditsLink').onclick = function(e) {
     browser.tabs.create({ url: chrome.extension.getURL('credits.html')}, function(tab){});
     return false;

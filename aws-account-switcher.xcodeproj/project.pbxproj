@@ -19,7 +19,6 @@
 		7F22C1B6253094CE000AA3EC /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1B5253094CE000AA3EC /* manifest.json */; };
 		7F22C1BC253094CE000AA3EC /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1BB253094CE000AA3EC /* popup.html */; };
 		7F22C1F22530AB75000AA3EC /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1F12530AB75000AA3EC /* options.html */; };
-		7F22C2002530AC0F000AA3EC /* updated.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F22C1FF2530AC0F000AA3EC /* updated.html */; };
 		7F2501BA2539CE0C002D551E /* credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F2501B92539CE0C002D551E /* credits.html */; };
 		7F6A8F3A25374D1900EB82F2 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 7F6A8F3925374D1900EB82F2 /* CHANGELOG.md */; };
 		7F6A8F3E25374E8000EB82F2 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 7F6A8F3D25374E8000EB82F2 /* js */; };
@@ -71,7 +70,6 @@
 		7F22C1C1253094CE000AA3EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F22C1C2253094CE000AA3EC /* AWS_Extend_Switch_Roles_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AWS_Extend_Switch_Roles_Extension.entitlements; sourceTree = "<group>"; };
 		7F22C1F12530AB75000AA3EC /* options.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = options.html; sourceTree = "<group>"; };
-		7F22C1FF2530AC0F000AA3EC /* updated.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = updated.html; sourceTree = "<group>"; };
 		7F2501B92539CE0C002D551E /* credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credits.html; sourceTree = "<group>"; };
 		7F6A8F3925374D1900EB82F2 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		7F6A8F3D25374E8000EB82F2 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 				7F2501B92539CE0C002D551E /* credits.html */,
 				7F22C1F12530AB75000AA3EC /* options.html */,
 				7F22C1BB253094CE000AA3EC /* popup.html */,
-				7F22C1FF2530AC0F000AA3EC /* updated.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -275,7 +272,6 @@
 				7F22C1B4253094CE000AA3EC /* icons in Resources */,
 				7FB6E0BD2530B7B200538AE5 /* bin in Resources */,
 				7F22C1B6253094CE000AA3EC /* manifest.json in Resources */,
-				7F22C2002530AC0F000AA3EC /* updated.html in Resources */,
 				7F22C1B2253094CE000AA3EC /* _locales in Resources */,
 				7F2501BA2539CE0C002D551E /* credits.html in Resources */,
 			);
