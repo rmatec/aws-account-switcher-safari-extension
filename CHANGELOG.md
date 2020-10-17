@@ -10,7 +10,7 @@ Changelog
 ## v2.0.4 (2020/09/28)
 
 - Enable 'Show only matching roles' again
-- Open the popup menu with the keyboard shortcut (default `Ctrl + Shift + ,`) (thanks to @axeleroy)
+- Open the popup menu with the keyboard shortcut (default `Command + Shift + ,`) (thanks to @axeleroy)
 - Refacor Refactor inner processing account and user information
 - Remove dependency on Sanitizer
 
