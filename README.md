@@ -8,8 +8,9 @@ The features are the same as the Chrome and Firefox plugins. The documentation c
 
 ## Installation
 
-You can install this extension for Safari from the Mac App Store. Unfortunately Apple phased out the old extension format which allowed to be installed independently. The extension is under review by Apple and it will hopefully be available soon. I will update this README with the link once it is approvded.
-However, you can bypass the Mac App Store by cloning the project and building and installing the extension from Xcode.
+You can install this extension for Safari from the Mac App Store in this link https://apps.apple.com/gb/app/aws-account-switcher/id1535264792?mt=12
+Unfortunately Apple phased out the old extension format which allowed to be installed independently.
+However, you can bypass the Mac App Store by cloning the project and building and installing the extension from Xcode yourself.
 
 ## Donation
 
