@@ -12,6 +12,10 @@ You can install this extension for Safari from the Mac App Store in this link ht
 Unfortunately Apple phased out the old extension format which allowed to be installed independently.
 However, you can bypass the Mac App Store by cloning the project and building and installing the extension from Xcode yourself.
 
+## Known issues
+
+- The extension cannot be configured in private mode as the configuration window fails to open. However, you can configure it in normal mode and it will work as expected in private mode.
+
 ## Donation
 
 If you would like to support me and the costs associated with publishing the extension in the App Store you can do so here https://ko-fi.com/rmatec 
