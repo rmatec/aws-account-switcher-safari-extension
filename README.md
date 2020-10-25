@@ -16,6 +16,8 @@ However, you can bypass the Mac App Store by cloning the project and building an
 
 The Safari extension will follow the same versions as the Chrome and Firefox plugins in https://github.com/tilfin/aws-extend-switch-roles. The versioning there uses 3 digits (e. g. v2.0.5). This project will use 4 digits in order to apply Safari only fixes (e. g. v2.0.5.1)
 
+The versioning might change in the future if this project drifts enough from the work done by Tilfin.
+
 ## Known issues
 
 - The extension cannot be configured in private mode as the configuration window fails to open. However, you can configure it in normal mode and it will work as expected in private mode.
