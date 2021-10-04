@@ -1,3 +1,7 @@
+import { createProfileSet } from './lib/profile_set.js'
+import { DataProfilesSplitter } from './lib/data_profiles_splitter.js'
+import { StorageRepository, SyncStorageRepository } from './lib/storage_repository.js'
+
 function openOptions() {
   if (window.chrome) {
     chrome.runtime.openOptionsPage(err => {
@@ -32,24 +36,36 @@ function executeAction(tabId, action, data) {
   }
 }
 
-function brushAccountId(val) {
-  const r = val.match(/^(\d{4})\-(\d{4})\-(\d{4})$/);
-  if (!r) return val;
-  return r[1] + r[2] + r[3];
-}
-
 window.onload = function() {
+  const MANY_SWITCH_COUNT = 4;
+
   document.getElementById('openOptionsLink').onclick = function(e) {
-    console.log('Opening options');
     openOptions();
     return false;
   }
 
-  document.getElementById('openCreditsLink').onclick = function(e) {
-    browser.tabs.create({ url: chrome.extension.getURL('credits.html')}, function(tab){});
+  document.getElementById('openUpdateNoticeLink').onclick = function(e) {
+    chrome.tabs.create({ url: chrome.extension.getURL('updated.html')}, function(tab){});
     return false;
   }
 
+  document.getElementById('openCreditsLink').onclick = function(e) {
+    chrome.tabs.create({ url: chrome.extension.getURL('credits.html')}, function(tab){});
+    return false;
+  }
+
+  document.getElementById('openSupportersLink').onclick = document.getElementById('openSupportMe').onclick = function(e) {
+    chrome.tabs.create({ url: chrome.extension.getURL('supporters.html')}, function(tab){});
+    return false;
+  }
+
+  const hasGoldenKey = localStorage.getItem('hasGoldenKey');
+  const swcnt = localStorage.getItem('switchCount') || 0;
+  if (hasGoldenKey) {
+    document.getElementById('goldenkey').style.display = 'block';
+  } else if (swcnt > MANY_SWITCH_COUNT) {
+    document.getElementById('supportComment').style.display = 'block';
+  }
   main();
 }
 
@@ -61,36 +77,45 @@ function main() {
        || url.host.endsWith('.amazonaws-us-gov.com')
        || url.host.endsWith('.amazonaws.cn')) {
         executeAction(tab.id, 'loadInfo', {}).then(userInfo => {
-          loadFormList(url, userInfo, tab.id);
-          document.querySelector('main').style.display = 'block';
-        });
+          if (userInfo) {
+            loadFormList(url, userInfo, tab.id);
+            document.getElementById('main').style.display = 'block';
+          } else {
+            const noMain = document.getElementById('noMain');
+            const p = noMain.querySelector('p');
+            p.textContent = 'Failed to fetch user info from the AWS Management Console page';
+            p.style.color = '#d11';
+            noMain.style.display = 'block';
+          }
+        })
+      } else {
+        const p = noMain.querySelector('p');
+        p.textContent = "You'll see the role list here when the current tab is AWS Management Console page.";
+        p.style.color = '#666';
+        noMain.style.display = 'block';
       }
     })
 }
 
 function loadFormList(currentUrl, userInfo, tabId) {
-  chrome.storage.sync.get([
-    'profiles', 'profiles_1', 'profiles_2', 'profiles_3', 'profiles_4',
-    'hidesAccountId', 'showOnlyMatchingRoles',
-  ], function(data) {
+  const storageRepo = new SyncStorageRepository(chrome || browser)
+  storageRepo.get(['hidesAccountId', 'showOnlyMatchingRoles', 'configStorageArea'])
+  .then(data => {
     const hidesAccountId = data.hidesAccountId || false;
     const showOnlyMatchingRoles = data.showOnlyMatchingRoles || false;
+    const configStorageArea = data.configStorageArea || 'sync';
 
-    if (data.profiles) {
-      const dps = new DataProfilesSplitter();
-      const profiles = dps.profilesFromDataSet(data);
-      const {
-        loginDisplayNameAccount, loginDisplayNameUser,
-        roleDisplayNameAccount, roleDisplayNameUser, isGlobal
-      } = userInfo;
+    new StorageRepository(chrome || browser, configStorageArea).get(['profiles', 'profiles_1', 'profiles_2', 'profiles_3', 'profiles_4'])
+    .then(data => {
+      if (data.profiles) {
+        const dps = new DataProfilesSplitter();
+        const profiles = dps.profilesFromDataSet(data);
+        const profileSet = createProfileSet(profiles, userInfo, { showOnlyMatchingRoles });
 
-      const baseAccount = brushAccountId(loginDisplayNameAccount);
-      const filterByTargetRole = showOnlyMatchingRoles ? (roleDisplayNameUser || loginDisplayNameUser.split("/", 2)[0]) : null;
-      const profileSet = new ProfileSet(profiles, baseAccount, { filterByTargetRole });
-
-      const list = document.getElementById('roleList');
-      loadProfiles(profileSet, tabId, list, currentUrl, isGlobal, hidesAccountId);
-    }
+        const list = document.getElementById('roleList');
+        loadProfiles(profileSet, tabId, list, currentUrl, userInfo.isGlobal, hidesAccountId);
+      }
+    })
   });
 }
 
@@ -113,7 +138,7 @@ function loadProfiles(profileSet, tabId, list, currentUrl, isGlobal, hidesAccoun
     anchor.dataset.rolename = item.role_name;
     anchor.dataset.account = item.aws_account_id;
     anchor.dataset.color = color;
-    anchor.dataset.redirecturi = replaceRedirectURI(currentUrl, item.region, isGlobal);
+    anchor.dataset.redirecturi = createRedirectURI(currentUrl, item.region);
     anchor.dataset.search = item.profile.toLowerCase() + ' ' + item.aws_account_id;
 
     anchor.appendChild(headSquare);
@@ -173,30 +198,24 @@ function loadProfiles(profileSet, tabId, list, currentUrl, isGlobal, hidesAccoun
   document.getElementById('roleFilter').focus()
 }
 
-function replaceRedirectURI(currentURL, destRegion, isGlobal) {
-  if (!destRegion) return currentURL;
+function createRedirectURI(currentURL, destRegion) {
+  if (!destRegion) return encodeURIComponent(currentURL.href);
 
-  let redirectUri = decodeURIComponent(currentURL);
+  let redirectUri = currentURL.href;
   const md = currentURL.search.match(/region=([a-z\-1-9]+)/);
   if (md) {
     const currentRegion = md[1];
     if (currentRegion !== destRegion) {
-      redirectUri = redirectUri.replace(new RegExp(currentRegion, 'g'), destRegion);
-      if (!isGlobal) {
-        if (currentRegion === 'us-east-1') {
-          redirectUri = redirectUri.replace('://', `://${destRegion}.`);
-        } else if (destRegion === 'us-east-1') {
-          redirectUri = redirectUri.replace(/:\/\/[^.]+\./, '://');
-        }
-      }
+      redirectUri = redirectUri.replace('region=' + currentRegion, 'region=' + destRegion);
     }
-    redirectUri = encodeURIComponent(redirectUri);
   }
-  return redirectUri;
+  return encodeURIComponent(redirectUri);
 }
 
 function sendSwitchRole(tabId, data) {
   executeAction(tabId, 'switch', data).then(() => {
+    let swcnt = localStorage.getItem('switchCount') || 0;
+    localStorage.setItem('switchCount', ++swcnt);
     window.close()
   });
 }
