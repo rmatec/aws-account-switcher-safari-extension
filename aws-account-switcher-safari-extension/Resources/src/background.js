@@ -40,15 +40,6 @@ function saveAwsConfig(data, callback, storageRepo) {
 
 function initScript() {
   localStorage.setItem('switchCount', 0);
-
-  syncStorageRepo.get(['goldenKeyExpire'])
-  .then(data => {
-    const { goldenKeyExpire } = data;
-    if ((new Date().getTime() / 1000) < Number(goldenKeyExpire)) {
-      localStorage.setItem('hasGoldenKey', 't');
-      chrome.browserAction.setIcon({ path: 'icons/Icon_48x48_g.png' }, () => {});
-    }
-  })
 }
 
 chrome.runtime.onStartup.addListener(function () { initScript() })

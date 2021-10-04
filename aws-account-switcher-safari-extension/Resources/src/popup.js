@@ -44,28 +44,11 @@ window.onload = function() {
     return false;
   }
 
-  document.getElementById('openUpdateNoticeLink').onclick = function(e) {
-    chrome.tabs.create({ url: chrome.extension.getURL('updated.html')}, function(tab){});
-    return false;
-  }
-
   document.getElementById('openCreditsLink').onclick = function(e) {
     chrome.tabs.create({ url: chrome.extension.getURL('credits.html')}, function(tab){});
     return false;
   }
 
-  document.getElementById('openSupportersLink').onclick = document.getElementById('openSupportMe').onclick = function(e) {
-    chrome.tabs.create({ url: chrome.extension.getURL('supporters.html')}, function(tab){});
-    return false;
-  }
-
-  const hasGoldenKey = localStorage.getItem('hasGoldenKey');
-  const swcnt = localStorage.getItem('switchCount') || 0;
-  if (hasGoldenKey) {
-    document.getElementById('goldenkey').style.display = 'block';
-  } else if (swcnt > MANY_SWITCH_COUNT) {
-    document.getElementById('supportComment').style.display = 'block';
-  }
   main();
 }
 

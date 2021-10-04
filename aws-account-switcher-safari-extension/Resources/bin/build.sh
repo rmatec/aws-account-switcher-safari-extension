@@ -6,16 +6,14 @@ resources="$SRCROOT/aws-account-switcher-safari-extension/Resources"
 options="$resources/js/options.js"
 popup="$resources/js/popup.js"
 background="$resources/js/background.js"
-supporters="$resources/js/supporters.js"
 
 mkdir -p "$resources/js"
 
 cp "$resources/src/content.js" "$resources/js/content.js"
 cp "$resources/src/attach_target.js" "$resources/js/attach_target.js"
 
-rollup src/options.js --file $options
-rollup src/popup.js --file $popup
-rollup src/background.js --file $background
-rollup src/supporters.js --file $supporters
+rollup "$resources/src/options.js" --file $options
+rollup "$resources/src/popup.js" --file $popup
+rollup "$resources/src/background.js" --file $background
 
 echo "Finished preparing files for production"

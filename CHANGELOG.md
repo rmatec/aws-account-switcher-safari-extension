@@ -1,6 +1,27 @@
 Changelog
 =========
 
+## 2.2.0 (2021/09/25)
+
+- Support 'role_name' parameter that expresses the name of role at login, on base account (thanks to @AKoetsier)
+
+## 2.1.1 (2021/05/22)
+
+- Fix switching region broken by a strict change in the CSP of AWS Console
+
+## 2.1.0 (2021/02/12)
+
+- Implement 'Configuration storage' setting to select 'Sync' or 'Local' (thanks to @reegnz)
+- Change the configuration by Config Sender API saving to 'Local' storage
+- Strictly validate the AWS Configuration and change the error message distinct
+
+## v2.0.6 (2021/01/25)
+
+- Fix encoding redirect URI in the particular AWS Console pages
+- Fix double scrollbars of the popup menu
+- ~~Add supporters program and golden key feature instead of donations~~
+- Change left pane in the popup menu to always be visible
+
 ## v2.0.5 (2020/10/04)
 
 - Fix 'Show only matching roles'
